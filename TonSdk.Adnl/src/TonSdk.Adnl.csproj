@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>net6.0;net7.0;netstandard2.1</TargetFrameworks>
@@ -24,7 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="TonSdk.Core" Version="0.3.3" />
+      <!--<PackageReference Include="TonSdk.Core" Version="0.3.3" />-->
+	  <ProjectReference Include="..\..\TonSdk.Core\src\TonSdk.Core.csproj" />
     </ItemGroup>
 
 </Project>

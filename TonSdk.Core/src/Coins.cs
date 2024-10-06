@@ -33,7 +33,7 @@ namespace TonSdk.Core {
                 decimals = options?.Decimals != null ? options.Decimals : 9;
             }
 
-            var _value = value?.ToString().Replace(",", ".");
+            var _value = value?.ToString().Replace(",", ".") ?? "0";
 
             CheckCoinsType(_value);
             CheckCoinsDecimals(decimals);
